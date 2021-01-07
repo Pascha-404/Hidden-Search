@@ -12,4 +12,45 @@ body {
     justify-content: center;
     margin: 0;
     overflow: hidden;
+    background: linear-gradient(#485696,#E7E7E7);
+}
+
+.container {
+    position: relative;
+}
+
+.search {
+width: 40px;
+height: 40px;
+border: none;
+transition: width .3s ease;
+}
+
+.search.active {
+    width: 200px;
+}
+
+.search.active .searchBtn{
+    transform: translateX(198px);
+}
+
+.searchBtn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #989FBF;
+    font-size: 26px;
+    transition: transform .3s ease;
+    
+}
+
+.searchBtn:focus {
+    outline: none;
+}
+
+.searchBtn:active {
+    transform: scale(0.98);
 }

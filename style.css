@@ -17,27 +17,32 @@ body {
 
 .container {
     position: relative;
+    height: 50px;
 }
 
 .search {
-width: 40px;
-height: 40px;
+width: 50px;
+height: 50px;
 border: none;
 transition: width .3s ease;
+font-size: 18px;
+padding: 15px;
 }
 
 .search.active {
     width: 200px;
 }
 
-.search.active .searchBtn{
+.search.active + .searchBtn{
     transform: translateX(198px);
+
 }
 
 .searchBtn {
-    border: none;
-    width: 40px;
-    height: 40px;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +52,7 @@ transition: width .3s ease;
     
 }
 
-.searchBtn:focus {
+.searchBtn:focus, .search:focus {
     outline: none;
 }
 
